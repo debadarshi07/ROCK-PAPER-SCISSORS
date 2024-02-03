@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body{
+    background-color: rgb(0, 75, 100);
+}
+
+h1{
+    background-color: #081b31;
+    color: #b7e679;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+.choice{
+    height: 170px;
+    width: 170px;
+}
+
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.choices{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    border: 3px solid rgb(221, 10, 35);
+}
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 3.5rem;
+    margin-top: 1rem;
+    color: #eac785;
+}
+
+#user-score,#computer-score{
+    font-size: 4rem;
+    color: rgb(237, 195, 131);
+}
+
+.msg-container{
+    margin-top: 2rem;
+}
+
+#msg{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    display: inline;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+footer{
+    color: rgb(204, 227, 134);
+    position: fixed;
+    left: 20px;
+    bottom: 10px;
+}
+
+@media screen and (max-width: 630px){
+    .choices{
+        gap:  1rem;
+    }
+    .choice{
+        height: 100px;
+        width: 100px;
+    }
+    img{
+        height: 80px;
+        width: 80px;
+    }
+    .score-board{
+        font-size: 1.5rem;
+        gap: 2rem;
+    }
+    #user-score,#computer-score{
+        font-size: 2.5rem;
+    }
+    #msg{
+        font-size: 1rem;
+    }
+}
+
+@media screen and  (max-width: 450px){
+    h1{
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    h1{
+        font-size: large;
+    }
+    .choice{
+        height: 60px;
+        width: 60px;
+    }
+    img{
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 240px){
+    h1{
+        font-size: small;
+    }
+    .choice{
+        height: 50px;
+        width: 50px;
+    }
+    img{
+        height: 40px;
+        width: 40px;
+    }
+    footer{
+        font-size: x-small;
+    }
+}
